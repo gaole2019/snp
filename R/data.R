@@ -6,11 +6,7 @@
 #' @name shared_allen_anno
 #' @rdname shared_allen_anno
 #' @format
-#' A data frame with 1,327 rows and 5 columns:
-#' \describe{
-#'   \item{CurrentID}
-#'   \item{ParentID}
-#' }
+#' A data frame with 1,327 rows and 5 columns: CurrentID, ParentID, Acronym, Fullname, ColorHex
 #' @docType data
 #' @example
 #' head(shared_allen_anno)
