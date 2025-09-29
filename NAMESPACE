@@ -2,3 +2,5 @@
 
 export(snp_bigcorPar)
 export(snp_calculateProjections)
+export(snp_getAcronymFromStructureID)
+export(snp_getStructureIDFromAcronym)
