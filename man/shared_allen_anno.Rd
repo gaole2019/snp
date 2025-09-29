@@ -5,16 +5,15 @@
 \alias{shared_allen_anno}
 \title{shared_allen_anno}
 \format{
-A data frame with 1,327 rows and 5 columns:
-\describe{
-\item{CurrentID}
-\item{ParentID}
-}
+A data frame with 1,327 rows and 5 columns: CurrentID, ParentID, Acronym, Fullname, ColorHex
 }
 \usage{
 shared_allen_anno
 }
 \description{
 allen ccf v3
+}
+\examples{
+head(snp::shared_allen_anno)
 }
 \keyword{datasets}

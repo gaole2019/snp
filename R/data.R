@@ -8,6 +8,6 @@
 #' @format
 #' A data frame with 1,327 rows and 5 columns: CurrentID, ParentID, Acronym, Fullname, ColorHex
 #' @docType data
-#' @example
-#' head(shared_allen_anno)
+#' @examples
+#' head(snp::shared_allen_anno)
 "shared_allen_anno"
