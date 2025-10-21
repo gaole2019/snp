@@ -2,12 +2,12 @@
 % Please edit documentation in R/snp_bigcorPar.r
 \name{snp_bigcorPar}
 \alias{snp_bigcorPar}
-\title{Title}
+\title{Calculate pairwise distance among columns}
 \usage{
 snp_bigcorPar(x, size = 1000, verbose = TRUE, ncore = "all", ...)
 }
 \arguments{
-\item{x}{The matrix for processing. Notably, the pairwise distance is calculated among column.}
+\item{x}{The matrix for processing. Notably, the pairwise distance is calculated among columns.}
 
 \item{size}{Number of columns in each block. Default value is 1000.}
 
@@ -19,5 +19,5 @@ snp_bigcorPar(x, size = 1000, verbose = TRUE, ncore = "all", ...)
 A distance matrix among columns
 }
 \description{
-Title
+Calculate pairwise distance among columns
 }
