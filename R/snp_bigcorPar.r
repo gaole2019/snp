@@ -1,6 +1,6 @@
-#' Title
+#' Calculate pairwise distance among columns
 #'
-#' @param x The matrix for processing. Notably, the pairwise distance is calculated among column.
+#' @param x The matrix for processing. Notably, the pairwise distance is calculated among columns.
 #' @param size Number of columns in each block. Default value is 1000.
 #' @param verbose
 #' @param ncore Number of CPU to use
