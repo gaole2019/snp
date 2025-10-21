@@ -1,10 +1,13 @@
 Package: snp
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Quantify the Single-Neuron Projectomes
+Version: 1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Le", "GAO", , "gaole2017@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0271-5424"))
+Description: (1) Check the quality of reconstructed single neurons.
+             (2) Split the single neurons into different compartments.
+             (3) Quanitfy the reconstructed morphologies of single neurons.
+             (4) Visualize the results.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
