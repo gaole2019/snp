@@ -1,0 +1,3 @@
+# 01. Convert the FNT file to SWC file
+
+Fast Neurite Tracer (FNT) stores the tracing results into the FNT format. Since SWC format is widely used, the first step is to convert the FNT file into SWC file. It is noted 
