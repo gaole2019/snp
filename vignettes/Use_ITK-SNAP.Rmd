@@ -1,11 +1,11 @@
 ---
-title: "Use ITK-SNAP"
+title: "2. Use ITK-SNAP"
 output: html_document
 ---
 
 We use ITK-SNAP to segment brain regions so that we can localize the exact brain regions that a reconstructed neuron reside in and its axon terminate.
 
-1. Download ITK-SNAP from its website. Version 3.6.0 is recommended since it is more stable than other versions from my personal experience.
+1. Download ITK-SNAP from its website (https://www.itksnap.org/pmwiki/pmwiki.php). Version 3.6.0 is recommended since it is more stable than other versions from my personal experience.
 
 2. Load 3D image stored in the NRRD file format and start to segment manually.
 

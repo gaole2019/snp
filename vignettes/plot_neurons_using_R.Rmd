@@ -1,5 +1,18 @@
 ---
-title: "plot_neurons_using_R"
+title: "3. Plot neurons using R"
 output: html_document
 ---
 
+Below is a demo. You have to install relevant R packages, such as nat.
+
+```{r eval=FALSE, include=TRUE}
+library(nat)
+
+mesh <- rgl::readOBJ(con = "XXX.obj")
+
+neuron <- nat::read.neuron("XXX.swc")
+
+open3d()
+plot3d(neuron, soma = 10)
+shade3d(mesh, alpha = 0.1, color = "white")
+```
