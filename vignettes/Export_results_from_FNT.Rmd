@@ -1,5 +1,5 @@
 ---
-title: "1. Export results from fnt-tracer"
+title: "Export results from fnt-tracer"
 output: html_document
 ---
 
@@ -9,10 +9,10 @@ mkdir split
 fnt-split tracing.fnt -o split
 ```
 
-In the folder split, FNT files started with JUNK denote the segment reconstructed in FNT-tracer without soma bodies.
+In the folder split, JUNK*.fnt files denote the segment reconstructed in FNT-tracer without soma bodies.
 
 # 2. convert FNT file to SWC file
-Fast Neurite Tracer (FNT) stores the tracing results into the FNT format. Since SWC format is widely used, we convert the FNT file into SWC file.
+Fast Neurite Tracer (FNT) stores the tracing results into the FNT format. Since SWC format is widely used, we convert the FNT file into SWC file. A brief introduction of SWC format can be found in https://www.nature.com/articles/s41467-023-42931-x#Fig1.
 
 ```{bash eval=FALSE}
 fnt-to-swc 0000.fnt 0000.swc
@@ -21,6 +21,10 @@ fnt-to-swc 0000.fnt 0000.swc
 # 3. convert FNT files to SWC files in batch
 
 ## Linux
+```{bash eval=FALSE}
+cd your_folder_storing_SWC_files
+```
+
 ```{bash eval=FALSE}
 for file_name in `ls`
 do

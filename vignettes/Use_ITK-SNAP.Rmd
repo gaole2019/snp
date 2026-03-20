@@ -1,5 +1,5 @@
 ---
-title: "2. Use ITK-SNAP"
+title: "Use ITK-SNAP"
 output: html_document
 ---
 
