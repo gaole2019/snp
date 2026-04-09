@@ -18,9 +18,9 @@
 #' @examples
 snp_calculateProjections <-
   function(PathOfNeuron,
-           Hemisphere,
-           StructureIDOfTargets,
+           FlagFlip = FALSE,
            Annotation,
+           StructureIDOfTargets,
            Resolution,
            NumOfCores,
            OptionMetric = "LengthOfAxon") {
@@ -50,8 +50,8 @@ snp_calculateProjections <-
         neuron <- nat::read.neuron(PathOfNeuron[iNeuron])
         tmpSWC <- neuron$d
 
-        # flip neurons in the right hemisphere to the left side
-        if (Hemisphere[iNeuron] == "Right")
+        # flip neurons from left hemisphere to right hemisphere and vice verse
+        if (FlagFlip == TRUE)
           tmpSWC$Z <- 11400 - tmpSWC$Z
 
         # LengthOfAxon ----
