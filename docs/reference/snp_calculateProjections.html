@@ -62,9 +62,9 @@
     <div id="ref-usage">
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">snp_calculateProjections</span><span class="op">(</span></span>
 <span>  <span class="va">PathOfNeuron</span>,</span>
-<span>  <span class="va">Hemisphere</span>,</span>
-<span>  <span class="va">StructureIDOfTargets</span>,</span>
+<span>  FlagFlip <span class="op">=</span> <span class="cn">FALSE</span>,</span>
 <span>  <span class="va">Annotation</span>,</span>
+<span>  <span class="va">StructureIDOfTargets</span>,</span>
 <span>  <span class="va">Resolution</span>,</span>
 <span>  <span class="va">NumOfCores</span>,</span>
 <span>  OptionMetric <span class="op">=</span> <span class="st">"LengthOfAxon"</span></span>
@@ -79,17 +79,18 @@
 <dd><p>Full path of SWC file for each neuron</p></dd>
 
 
-<dt id="arg-hemisphere">Hemisphere<a class="anchor" aria-label="anchor" href="#arg-hemisphere"></a></dt>
-<dd><p>Which hemisphere does the neuron reside in. Note that neurons in right hemisphere were flipped to the left side.</p></dd>
-
-
-<dt id="arg-structureidoftargets">StructureIDOfTargets<a class="anchor" aria-label="anchor" href="#arg-structureidoftargets"></a></dt>
-<dd><p>Structure ID of brain regions or domains in the annotation.
-Column name of returned matrix is the same as StuctureIDOfTargets.</p></dd>
+<dt id="arg-flagflip">FlagFlip<a class="anchor" aria-label="anchor" href="#arg-flagflip"></a></dt>
+<dd><p>Whether flip neurons to the other hemisphere,
+e.g., neurons in right hemisphere were flipped to the left hemisphere.</p></dd>
 
 
 <dt id="arg-annotation">Annotation<a class="anchor" aria-label="anchor" href="#arg-annotation"></a></dt>
 <dd><p>3D array with each element assigned a positive value</p></dd>
+
+
+<dt id="arg-structureidoftargets">StructureIDOfTargets<a class="anchor" aria-label="anchor" href="#arg-structureidoftargets"></a></dt>
+<dd><p>Structure ID of brain regions or domains in the annotation.
+Column name of returned matrix is the same as StructureIDOfTargets.</p></dd>
 
 
 <dt id="arg-resolution">Resolution<a class="anchor" aria-label="anchor" href="#arg-resolution"></a></dt>
@@ -101,7 +102,8 @@ Column name of returned matrix is the same as StuctureIDOfTargets.</p></dd>
 
 
 <dt id="arg-optionmetric">OptionMetric<a class="anchor" aria-label="anchor" href="#arg-optionmetric"></a></dt>
-<dd><p>Default value is "LengthOfAxon". ("LengthOfAxon", "NumberOfEndNodes", "NumberOfBranchNodes")</p></dd>
+<dd><p>Default value is "LengthOfAxon".
+("LengthOfAxon", "NumberOfEndNodes", "NumberOfBranchNodes")</p></dd>
 
 </dl></div>
     <div id="value">

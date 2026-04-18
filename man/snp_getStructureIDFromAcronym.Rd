@@ -7,11 +7,14 @@
 snp_getStructureIDFromAcronym(acronymList, flag_debug = FALSE)
 }
 \arguments{
-\item{acronymList}{}
+\item{acronym}{}
+}
+\value{
+structureID
 }
 \description{
 This function returns the structureID of specified regions (acronym)
 }
 \examples{
-snp::getStructureFromAcronym(c("l_Isocortex", "r_CP"))
+snp::snp_getStructureFromAcronym(c("l_Isocortex", "r_CP"))
 }

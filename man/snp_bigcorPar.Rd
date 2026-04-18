@@ -11,6 +11,8 @@ snp_bigcorPar(x, size = 1000, verbose = TRUE, ncore = "all", ...)
 
 \item{size}{Number of columns in each block. Default value is 1000.}
 
+\item{verbose}{Show details}
+
 \item{ncore}{Number of CPU to use}
 
 \item{...}{Other parameters for calculate distance, pass to cor()}

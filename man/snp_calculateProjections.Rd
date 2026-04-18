@@ -6,9 +6,9 @@
 \usage{
 snp_calculateProjections(
   PathOfNeuron,
-  Hemisphere,
-  StructureIDOfTargets,
+  FlagFlip = FALSE,
   Annotation,
+  StructureIDOfTargets,
   Resolution,
   NumOfCores,
   OptionMetric = "LengthOfAxon"
@@ -17,18 +17,20 @@ snp_calculateProjections(
 \arguments{
 \item{PathOfNeuron}{Full path of SWC file for each neuron}
 
-\item{Hemisphere}{Which hemisphere does the neuron reside in. Note that neurons in right hemisphere were flipped to the left side.}
-
-\item{StructureIDOfTargets}{Structure ID of brain regions or domains in the annotation.
-Column name of returned matrix is the same as StuctureIDOfTargets.}
+\item{FlagFlip}{Whether flip neurons to the other hemisphere,
+e.g., neurons in right hemisphere were flipped to the left hemisphere.}
 
 \item{Annotation}{3D array with each element assigned a positive value}
+
+\item{StructureIDOfTargets}{Structure ID of brain regions or domains in the annotation.
+Column name of returned matrix is the same as StructureIDOfTargets.}
 
 \item{Resolution}{Voxel size of each annotation, e.g., 100, 50, 25, 10 um}
 
 \item{NumOfCores}{Number of cores for parallel computation}
 
-\item{OptionMetric}{Default value is "LengthOfAxon". ("LengthOfAxon", "NumberOfEndNodes", "NumberOfBranchNodes")}
+\item{OptionMetric}{Default value is "LengthOfAxon".
+("LengthOfAxon", "NumberOfEndNodes", "NumberOfBranchNodes")}
 }
 \value{
 projection matrix

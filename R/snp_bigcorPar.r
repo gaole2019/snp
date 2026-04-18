@@ -2,14 +2,13 @@
 #'
 #' @param x The matrix for processing. Notably, the pairwise distance is calculated among columns.
 #' @param size Number of columns in each block. Default value is 1000.
-#' @param verbose
+#' @param verbose Show details
 #' @param ncore Number of CPU to use
 #' @param ... Other parameters for calculate distance, pass to cor()
 #'
 #' @return A distance matrix among columns
 #' @export
 #'
-#' @examples
 snp_bigcorPar <-
   function(x, size = 1000, verbose = TRUE, ncore = "all", ...) {
   library(ff, quietly = TRUE)

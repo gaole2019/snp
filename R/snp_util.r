@@ -4,13 +4,13 @@
 #'
 #' This function returns the structureID of specified regions (acronym)
 #'
-#' @param acronymList
+#' @param acronym
 #'
-#' @return
+#' @return structureID
 #' @export
 #'
 #' @examples
-#' snp::getStructureFromAcronym(c("l_Isocortex", "r_CP"))
+#' snp::snp_getStructureFromAcronym(c("l_Isocortex", "r_CP"))
 snp_getStructureIDFromAcronym <-
   function(acronymList, flag_debug = FALSE) {
     NumAcronym <- length(acronymList)
@@ -43,10 +43,11 @@ snp_getStructureIDFromAcronym <-
 #'
 #' @param structureList
 #'
-#' @return
+#' @return acronym of brain regions
 #' @export
 #'
 #' @examples
+#' snp::snp_getStructureFromAcronym(c("l_315", "r_672"))
 snp_getAcronymFromStructureID <-
   function(structureList) {
     NumStructure <- length(structureList)

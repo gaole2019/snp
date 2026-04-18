@@ -9,6 +9,12 @@ snp_getAcronymFromStructureID(structureList)
 \arguments{
 \item{structureList}{}
 }
+\value{
+acronym of brain regions
+}
 \description{
 Convert StructureID to Acronym
+}
+\examples{
+snp::snp_getStructureFromAcronym(c("l_315", "r_672"))
 }

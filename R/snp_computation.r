@@ -4,18 +4,19 @@
 #' an unique index denoting a brain region or domain
 #'
 #' @param PathOfNeuron Full path of SWC file for each neuron
-#' @param Hemisphere Which hemisphere does the neuron reside in. Note that neurons in right hemisphere were flipped to the left side.
+#' @param FlagFlip Whether flip neurons to the other hemisphere,
+#' e.g., neurons in right hemisphere were flipped to the left hemisphere.
 #' @param Annotation 3D array with each element assigned a positive value
+#' @param StructureIDOfTargets Structure ID of brain regions or domains in the annotation.
+#' Column name of returned matrix is the same as StructureIDOfTargets.
 #' @param Resolution Voxel size of each annotation, e.g., 100, 50, 25, 10 um
 #' @param NumOfCores Number of cores for parallel computation
-#' @param OptionMetric Default value is "LengthOfAxon". ("LengthOfAxon", "NumberOfEndNodes", "NumberOfBranchNodes")
-#' @param StructureIDOfTargets Structure ID of brain regions or domains in the annotation.
-#' Column name of returned matrix is the same as StuctureIDOfTargets.
+#' @param OptionMetric Default value is "LengthOfAxon".
+#' ("LengthOfAxon", "NumberOfEndNodes", "NumberOfBranchNodes")
 #'
 #' @return projection matrix
 #' @export
 #'
-#' @examples
 snp_calculateProjections <-
   function(PathOfNeuron,
            FlagFlip = FALSE,
