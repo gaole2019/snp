@@ -65,19 +65,19 @@
 
     <div id="format">
     <h2>Format</h2>
-    <p>A data frame with 1,327 rows and 5 columns: CurrentID, ParentID, Acronym, Fullname, ColorHex</p>
+    <p>A data frame with 1,327 rows and 6 columns: CurrentID, ParentID, Acronym, Fullname, ColorHex, Level</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">snp</span><span class="fu">::</span><span class="va">shared_allen_anno</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   CurrentID ParentID   Acronym                  Fullname ColorHex</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       997       -1      root                      root   FFFFFF</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2         8      997      grey Basiccellgroupsandregions   BFDAE3</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       567        8        CH                  Cerebrum   B0F0FF</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       688      567       CTX            Cerebralcortex   B0FFB8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       695      688     CTXpl             Corticalplate   70FF70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6       315      695 Isocortex                 Isocortex   70FF71</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   CurrentID ParentID   Acronym                  Fullname ColorHex Level</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       997       -1      root                      root   FFFFFF     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2         8      997      grey Basiccellgroupsandregions   BFDAE3     1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3       567        8        CH                  Cerebrum   B0F0FF     2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4       688      567       CTX            Cerebralcortex   B0FFB8     3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5       695      688     CTXpl             Corticalplate   70FF70     4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6       315      695 Isocortex                 Isocortex   70FF71     5</span>
 </code></pre></div>
     </div>
   </div>

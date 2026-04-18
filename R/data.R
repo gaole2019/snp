@@ -6,7 +6,7 @@
 #' @name shared_allen_anno
 #' @rdname shared_allen_anno
 #' @format
-#' A data frame with 1,327 rows and 5 columns: CurrentID, ParentID, Acronym, Fullname, ColorHex
+#' A data frame with 1,327 rows and 6 columns: CurrentID, ParentID, Acronym, Fullname, ColorHex, Level
 #' @docType data
 #' @examples
 #' head(snp::shared_allen_anno)
