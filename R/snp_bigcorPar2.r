@@ -2,13 +2,13 @@
 
 #' Title
 #'
-#' @param x
-#' @param size
-#' @param verbose
-#' @param ncore
-#' @param ...
+#' @param x The matrix for processing. Notably, the pairwise distance is calculated among columns.
+#' @param size Number of columns in each block. Default value is 1000.
+#' @param verbose Show details
+#' @param ncore Number of CPU to use
+#' @param ... Other parameters for calculate distance, pass to cor()
 #'
-#' @returns
+#' @returns A distance matrix among columns
 #' @export
 #'
 #' @examples
