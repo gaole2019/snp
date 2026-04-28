@@ -11,7 +11,9 @@
 <url><loc>/reference/index.html</loc></url>
 <url><loc>/reference/shared_allen_anno.html</loc></url>
 <url><loc>/reference/snp_bigcorPar.html</loc></url>
+<url><loc>/reference/snp_bigcorPar2.html</loc></url>
 <url><loc>/reference/snp_calculateProjections.html</loc></url>
+<url><loc>/reference/snp_calculate_dendrite_feature.html</loc></url>
 <url><loc>/reference/snp_getAcronymFromStructureID.html</loc></url>
 <url><loc>/reference/snp_getStructureIDFromAcronym.html</loc></url>
 </urlset>
